@@ -285,6 +285,7 @@ a:active {
 .nav .nav-link {
     display: block;
     padding: 0.5rem 1rem 0.5rem 1rem;
+}
 
 .nav .nav-item:hover {
     color: var(--nav-item-link-hover);
