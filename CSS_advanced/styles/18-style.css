@@ -270,11 +270,11 @@ a:active {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
+    text-align: center; 
 }
 
-.nav-item {
-    font: var(nav- item-font-family);
+.nav .nav-item {
+    font: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
@@ -283,11 +283,10 @@ a:active {
 }
 
 .nav .nav-link {
-    display: blok;
-    padding: 0.5rem 1rem;
-}
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 
-.nav .nav-link:hover {
+.nav .nav-item:hover {
     color: var(--nav-item-link-hover);
 }
 
