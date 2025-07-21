@@ -239,7 +239,6 @@ a:active {
 .section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
-    padding: var(--footer-padding);
 }
 
 .section-tagline {
@@ -302,4 +301,8 @@ h5,
 h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
