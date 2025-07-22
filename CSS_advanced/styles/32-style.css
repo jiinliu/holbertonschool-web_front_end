@@ -362,7 +362,7 @@ a:active {
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
     --transition-duration: 0.3s;
-    --transition-timing-function: cubic-bezier(0.17, 0.67, 0, 1.01);
+    --transition-timing-function: cubic-bezier(0.17, 0.67, 0, 1.0);
 }
 
 h1,
