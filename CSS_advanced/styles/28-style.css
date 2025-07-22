@@ -344,10 +344,6 @@ a:active {
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
-    --header-logo-link-display: inline-block;
-    --header-logo-link-position: absolute;
-    --header-logo-link-top: -1rem;
-    --header-logo-link-left: 0;
 }
 
 h1,
@@ -485,7 +481,7 @@ ul.row {
     position: var(--header-logo-position);
 }
 
-.header-logo {
+.header-logo a {
     display: var(--header-logo-link-display);
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
