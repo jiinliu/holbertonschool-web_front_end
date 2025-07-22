@@ -296,6 +296,7 @@ a:active {
   background-color: var(--color-white);
   width: 0;
   height: 0.2rem;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 
@@ -360,6 +361,8 @@ a:active {
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
+    --transition-duration: 0.3s;
+    --transition-timing-function: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 h1,
@@ -459,6 +462,8 @@ ul.row {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
 }
 
 .card-testimonial {
@@ -523,11 +528,20 @@ ul.row {
     overflow: hidden;
 }
 
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+}
+
 .card-work .card-image img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+}
+
+.card-work:hover .card-image img {
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
@@ -536,6 +550,7 @@ ul.row {
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
@@ -568,3 +583,13 @@ ul.row {
 .card-work:hover .card-title {
     opacity: 1;
 }
+
+/* .transition-duration {
+    transition-duration: 0.3s;
+}
+
+.transition-cubic-bezier{
+    transition-cubic-bezier: var(0.17, 0.67, 0, 1.01);
+}
+
+ */
